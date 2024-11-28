@@ -10,8 +10,6 @@ const getImpianti = async () => {
   return await response.json();
 };
 
-//let impiantoId = 0
-
 const addImpianto = async (impianto) => {
   const response = await fetch(`http://localhost:8000/impianti`, {
     method: 'POST',

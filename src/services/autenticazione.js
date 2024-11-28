@@ -11,11 +11,10 @@
     }
     const data = await response.json();
     localStorage.setItem('token', data.token);
-  };*/
-
+  };
   
   const logout = () => {
     localStorage.removeItem('token');
   };
   
-export default { login, logout };
+export default { login, logout } ;*/

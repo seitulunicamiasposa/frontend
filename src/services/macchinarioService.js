@@ -11,7 +11,7 @@ const getMacchinariByImp = async (impiantoId) => {
   };
   
   const addMacchinario = async (impiantoId, macchinario) => {
-    const response = await fetch(`/api/impianti/${impiantoId}/macchinari`, {
+    const response = await fetch(`http://localhost:8000/impianti/${impiantoId}/macchinari`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
