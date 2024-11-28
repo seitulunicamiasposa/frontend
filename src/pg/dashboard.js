@@ -62,7 +62,10 @@ function Dashboard() {
                 <ul>
                     {impianti.map((impianti) => (
                         <li key={impianti._id}>
-                            {impianti._id} - <button onClick={pathImpianti}>{impianti.name} - {impianti.location} - {impianti.description}</button> - <button onClick={pathMacchinari} value={impianti.id}>{impianti.machinery.length}</button>
+                            {impianti._id} - 
+                            <button onClick={pathImpianti}>{impianti.name} - {impianti.location} - {impianti.description} - {impianti.machinery.length}
+                                
+                            </button>
                         </li>))}
                 </ul>  
     </div>
